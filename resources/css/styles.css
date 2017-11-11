@@ -1,10 +1,18 @@
 /* header */
 .header {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
-  align-items: center;
+
+  border-bottom: 1px solid black;
+  height: 80px;
+  width: 100%;
+  padding: 0 10px;
 }
 
 .logo {
@@ -13,6 +21,14 @@
   align-items: center;
 }
 
-.navigation li {
+.navigation {
   display: inline-block;
+}
+
+.navigation span {
+  padding: 20px 10px;
+}
+
+.navigation a {
+  color: black;
 }
