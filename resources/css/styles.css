@@ -2,11 +2,14 @@ div {
   border: 1px solid purple;
 }
 
+body {
+  margin: 0 0;
+}
+
 /* header */
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   position: fixed;
   z-index: 10;
 
@@ -18,20 +21,26 @@ div {
   border-bottom: 1px solid black;
   height: 80px;
   width: 100%;
-  padding: 0 10px;
+  margin: 0 0;
 }
 
-.logo {
+.header .logo {
   color: MediumAquamarine;
   display: inline-flex;
   align-items: center;
+  flex-grow: 1;
+  padding-left: 30px;
 }
 
-.navigation {
-  display: inline-block;
+.header .logo img {
+  margin-right: 10px; /* add space between image and text */
 }
 
+.header nav {
+  padding-right: 40px; /* push entire nave to the right */
+}
 nav span {
+  display: inline-block;
   padding: 20px 10px;
 }
 
@@ -50,6 +59,7 @@ nav a {
 .column {
   display: flex;
   flex-direction: column;
+  margin-right: 20px;
 }
 
 .column.large {
