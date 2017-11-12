@@ -1,14 +1,20 @@
+div {
+  border: 1px solid purple;
+}
+
 /* header */
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: fixed;
+  z-index: 10;
 
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
 
+  background-color: white; /* to keep things from showing through */
   border-bottom: 1px solid black;
   height: 80px;
   width: 100%;
@@ -25,10 +31,35 @@
   display: inline-block;
 }
 
-.navigation span {
+nav span {
   padding: 20px 10px;
 }
 
-.navigation a {
+nav a {
   color: black;
+}
+
+/* Main Body */
+.content {
+  position: relative;
+  top: 81px;
+  padding-top: 81px;
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.column.large {
+  width: 630px;
+}
+
+.column.medium {
+  width: 300px;
+}
+
+.column.small {
+  width: 240px;
 }
