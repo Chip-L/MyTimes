@@ -10,7 +10,7 @@ body {
 .header {
   display: flex;
   align-items: center;
-  position: fixed; 
+  position: fixed;
   z-index: 10;
 
   font-family: Verdana;
@@ -75,4 +75,49 @@ nav a {
 
 .column.small {
   width: 240px;
+}
+
+/* images divs */
+.image {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+}
+
+/* text in div */
+.image span {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+.image.headline span{
+  font-size: 40px;
+  text-align: left;
+}
+
+/* background images */
+.image.headline {
+  background-image: url("../images/img-story-main.png");
+}
+
+.image.story1 {
+  background-image: url("../images/img-story-1.png");
+}
+
+.image.story2 {
+  background-image: url("../images/img-story-2.png");
+}
+
+.image.story3 {
+  background-image: url("../images/img-story-3.png");
+}
+
+/* story divs */
+.story {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
 }
