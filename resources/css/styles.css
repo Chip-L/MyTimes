@@ -80,6 +80,7 @@ nav a {
   flex-direction: row;
   justify-content: space-between;
   height: 565px;
+  margin-top: 17px;
 }
 
 /* create columns for the non-headline stories */
@@ -102,7 +103,9 @@ nav a {
 .image {
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 300px;
+  margin-top: 15px;
 }
 
 /* text on images */
@@ -117,10 +120,12 @@ nav a {
 .image.headline span{
   font-size: 40px;
   text-align: left;
+  margin-left: 20px;
 }
 
 /* background images */
 .image.headline {
+  margin-top: 0;
   background-image: url("../images/img-story-main.png");
 }
 
@@ -144,6 +149,12 @@ nav a {
   color: black;
 }
 
+.story h2 {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* News Bites formatting */
 .news_bites {
   /* This is a descriptive class. There is no actual formatting needed for
@@ -151,6 +162,7 @@ nav a {
 }
 
 .news_bites h3 {
+  font-family: Georgia;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
@@ -163,7 +175,7 @@ nav a {
   font-family: Verdana;
   font-size: 12px;
   color: DimGray;
-  border-top: 1px solid black;
+  border-top: 1px solid black; /* <-- leaving this in because it said to have it in step 6 and since it never showed, I'm thinking step 8 doesn't really want it removed. */
   border-bottom: 1px solid black;
   padding: 11px 20px;
 }
