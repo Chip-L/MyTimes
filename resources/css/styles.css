@@ -10,7 +10,7 @@ body {
 }
 
 /* header */
-.header {
+header {
   position: fixed;
   display: flex;
   align-items: center;
@@ -24,10 +24,9 @@ body {
   border-bottom: 1px solid black;
   height: 80px;
   width: 100%;
-  margin: 0 0;
 }
 
-.header .logo {
+header .logo {
   color: MediumAquamarine;
   display: inline-flex;
   align-items: center;
@@ -35,13 +34,15 @@ body {
   padding-left: 30px;
 }
 
-.header .logo img {
+header .logo img {
   margin-right: 10px; /* add space between image and text */
 }
 
-.header nav {
-  padding-right: 40px; /* push entire nave to the right */
+header nav {
+  padding-right: 40px; /* push entire nave to the left */
 }
+
+/* nav settings apply to both header and footer */
 nav span {
   display: inline-block;
   padding: 20px 10px;
@@ -165,4 +166,41 @@ nav a {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   padding: 11px 20px;
+}
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+
+  width: 100%;
+  height: 325px;
+}
+
+footer .text {
+  display: block;
+}
+
+footer .logo {
+  display: inline-block;
+
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border-right: 2px solid white;
+
+  padding-right: 25px; /* centers the white line with between the text and the nav */
+}
+
+footer nav {
+  display: inline-block;
+  padding-left: 25px; /* centers the white line with between the text and the nav */
 }
