@@ -56,10 +56,10 @@ nav a {
 /* main container */
 .content {
   position: relative;
+  display: flex;
+  width: 1230px;
   padding-top: 116px;
   margin: 0 auto 78px auto;
-  width: 1230px;
-  display: flex;
 }
 
 /* columns */
